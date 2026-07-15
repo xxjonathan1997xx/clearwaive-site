@@ -17,13 +17,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/styles.css" />
+    <style>
+      .logo { gap: 3px; align-items: baseline; color: #171d21; letter-spacing: -.045em; }
+      .logo .logo-dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #4ba978; box-shadow: 0 0 0 3px rgba(75, 169, 120, .13); }
+    </style>
     <script src="/script.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <header class="site-header">
       <nav class="shell nav" aria-label="Primary navigation">
-        <a class="logo" href="/" aria-label="ClearWaive home"><span aria-hidden="true">✓</span>ClearWaive</a>
+        <a class="logo" href="/" aria-label="ClearWaive home">ClearWaive<span class="logo-dot" aria-hidden="true"></span></a>
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span></span><span></span><span></span><b class="sr-only">Open navigation</b></button>
         <div class="nav-links" id="nav-links">
           <a href="#how-it-works">How it works</a>
@@ -87,7 +91,7 @@
     </main>
 
     <footer>
-      <div class="shell footer-inner"><a class="logo" href="/">ClearWaive</a><p>A <a href="https://jbcdevelopment.dev">JBC Development</a> product.</p><a href="/privacy.html">Privacy</a></div>
+      <div class="shell footer-inner"><a class="logo" href="/">ClearWaive<span class="logo-dot" aria-hidden="true"></span></a><p>A <a href="https://jbcdevelopment.dev">JBC Development</a> product.</p><a href="/privacy.html">Privacy</a></div>
     </footer>
   </body>
 </html>
